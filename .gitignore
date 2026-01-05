@@ -23,6 +23,9 @@
 # misc
 .DS_Store
 *.pem
+GEMINI.md
+roadmap.md
+.vscode
 
 # debug
 npm-debug.log*
