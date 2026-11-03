@@ -5,6 +5,13 @@ export const metadata: Metadata = {
 	title: "Fantasy Gallery — Personal Object Wishlist",
 	description:
 		"Self-hosted dark-mode universal wishlist and curated object gallery.",
+	icons: {
+		icon: [
+			{ url: "/icon.svg", type: "image/svg+xml" },
+			{ url: "/favicon.ico", sizes: "32x32" },
+		],
+		apple: "/apple-icon.png",
+	},
 };
 
 export default function RootLayout({
