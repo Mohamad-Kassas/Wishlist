@@ -243,11 +243,21 @@ export function WishlistGallery({ initialItems }: WishlistGalleryProps) {
 		setItems((prev) =>
 			prev.map((item) => {
 				if (item.id !== id) return item;
-				return {
+				const updated: WishlistItem = {
 					...item,
 					...patch,
 					updatedAt: new Date().toISOString(),
 				};
+				if ("notes" in patch) {
+					const trimmed =
+						typeof patch.notes === "string" ? patch.notes.trim() : "";
+					if (trimmed) {
+						updated.notes = trimmed;
+					} else {
+						delete updated.notes;
+					}
+				}
+				return updated;
 			}),
 		);
 

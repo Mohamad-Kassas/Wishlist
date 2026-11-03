@@ -95,7 +95,7 @@ export function InspectorSheet({
 			highPrice: null,
 			category: category.trim() || "Curated",
 			image: imageInput.trim(),
-			notes: notes.trim() || undefined,
+			notes: notes.trim() ? notes.trim() : null,
 			sizeOverride,
 		});
 		onClose();

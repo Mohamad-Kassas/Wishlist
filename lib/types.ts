@@ -40,7 +40,7 @@ export interface WishlistItem {
 	inStock?: boolean;
 	rating?: number | null;
 	reviewCount?: number | null;
-	notes?: string;
+	notes?: string | null;
 	createdAt: string;
 	updatedAt: string;
 	acquiredAt?: string | null;

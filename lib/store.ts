@@ -565,6 +565,16 @@ export async function updateItemById(
 		updatedAt: new Date().toISOString(),
 	};
 
+	if ("notes" in patch) {
+		const trimmedNotes =
+			typeof patch.notes === "string" ? patch.notes.trim() : "";
+		if (trimmedNotes) {
+			updated.notes = trimmedNotes;
+		} else {
+			delete updated.notes;
+		}
+	}
+
 	if (patch.status === "owned" && current.status !== "owned") {
 		updated.acquiredAt = new Date().toISOString();
 	} else if (patch.status === "active") {
