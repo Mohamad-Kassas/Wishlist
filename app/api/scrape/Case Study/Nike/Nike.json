@@ -1,0 +1,422 @@
+[
+	{
+		"@context": "https://schema.org",
+		"@type": "ProductGroup",
+		"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m#group",
+		"name": "Nike Air Force 1 '07 LV8 Men's Shoes",
+		"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+		"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m",
+		"productGroupID": "Ge1zPL6m",
+		"variesBy": ["https://schema.org/color", "https://schema.org/size"],
+		"brand": { "@type": "Brand", "name": "Nike" },
+		"audience": {
+			"@type": "PeopleAudience",
+			"suggestedGender": "https://schema.org/Male",
+			"suggestedMinAge": 13
+		},
+		"hasVariant": [
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-4",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 4",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "4",
+				"gtin": "00198727567279",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-4.5",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 4.5",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "4.5",
+				"gtin": "00198727569518",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-5",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 5",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "5",
+				"gtin": "00198727571238",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-5.5",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 5.5",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "5.5",
+				"gtin": "00198727563509",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-6",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 6",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "6",
+				"gtin": "00198727565909",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-6.5",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 6.5",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "6.5",
+				"gtin": "00198727564407",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-7",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 7",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "7",
+				"gtin": "00198727571160",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-7.5",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 7.5",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "7.5",
+				"gtin": "00198727563448",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-8",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 8",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "8",
+				"gtin": "00198727560478",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-8.5",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 8.5",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "8.5",
+				"gtin": "00198727565053",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-9",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 9",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "9",
+				"gtin": "00198727561413",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-9.5",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 9.5",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "9.5",
+				"gtin": "00198727566395",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-10",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 10",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "10",
+				"gtin": "00198727566272",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-10.5",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 10.5",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "10.5",
+				"gtin": "00198727567415",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-11",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 11",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "11",
+				"gtin": "00198727560362",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-11.5",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 11.5",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "11.5",
+				"gtin": "00198727568375",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-12",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 12",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "12",
+				"gtin": "00198727562168",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-12.5",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 12.5",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "12.5",
+				"gtin": "00198727561345",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-13",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 13",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "13",
+				"gtin": "00198727567729",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-14",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 14",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "14",
+				"gtin": "00198727569662",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"@type": "Product",
+				"@id": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060#size-15",
+				"name": "Nike Air Force 1 '07 LV8 Men's Shoes - Anthracite/Cool Grey/Wolf Grey/Anthracite - Size 15",
+				"color": "Anthracite/Cool Grey/Wolf Grey/Anthracite",
+				"description": "Comfortable, durable and timeless – it's number one for a reason. The classic '80s construction is paired with durable materials for style that tracks whether you're on court or on the go.",
+				"mpn": "IQ0292-060",
+				"image": "https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				"size": "15",
+				"gtin": "00198727570293",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-060",
+					"price": 165,
+					"priceCurrency": "CAD",
+					"availability": "https://schema.org/InStock",
+					"itemCondition": "https://schema.org/NewCondition"
+				}
+			},
+			{
+				"url": "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m/IQ0292-010"
+			}
+		]
+	}
+]

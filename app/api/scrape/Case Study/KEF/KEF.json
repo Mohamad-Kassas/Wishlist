@@ -1,0 +1,286 @@
+[
+	{
+		"@context": "http://schema.org",
+		"@type": "ProductGroup",
+		"@id": "https://ca.kef.com/products/q11-meta#product_sp_schemaplus",
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "https://ca.kef.com/products/q11-meta#webpage_sp_schemaplus",
+			"sdDatePublished": "2026-01-10T23:49-0500",
+			"sdPublisher": {
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"@id": "https://schemaplus.io",
+				"name": "SchemaPlus App"
+			}
+		},
+		"additionalProperty": [
+			{
+				"@type": "PropertyValue",
+				"name": "Tags",
+				"value": ["Floorstanding", "Q Series Meta"]
+			},
+			{
+				"@type": "PropertyValue",
+				"name": "Color",
+				"value": ["Satin Black", "Satin White", "Walnut"]
+			}
+		],
+		"brand": {
+			"@type": "Brand",
+			"name": "KEF",
+			"url": "https://ca.kef.com/collections/vendors?q=KEF"
+		},
+		"category": "Passive HiFi Speakers",
+		"color": "",
+		"depth": "",
+		"height": "",
+		"itemCondition": "http://schema.org/NewCondition",
+		"logo": "",
+		"manufacturer": "",
+		"material": "",
+		"model": "46256842080479",
+		"hasVariant": [
+			{
+				"@type": "Product",
+				"name": "Satin Black",
+				"sku": "SP4093B0AA",
+				"mpn": 46256842080479,
+				"image": "https://ca.kef.com/cdn/shop/files/pdt-q11-meta-stn-pks01.png?v=1762158686&width=600",
+				"description": "Q11 Meta",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://ca.kef.com/products/q11-meta?variant=46256842080479",
+					"@id": "46256842080479",
+					"availability": "http://schema.org/InStock",
+					"inventoryLevel": { "@type": "QuantitativeValue", "value": "354" },
+					"price": 1249.98,
+					"priceSpecification": [
+						{
+							"@type": "UnitPriceSpecification",
+							"price": 1249.98,
+							"priceCurrency": "CAD"
+						}
+					],
+					"priceCurrency": "CAD",
+					"priceValidUntil": "2030-12-21",
+					"shippingDetails": [
+						{
+							"@type": "OfferShippingDetails",
+							"shippingRate": { "@type": "MonetaryAmount", "currency": "CAD" },
+							"shippingDestination": {
+								"@type": "DefinedRegion",
+								"addressCountry": []
+							},
+							"deliveryTime": {
+								"@type": "ShippingDeliveryTime",
+								"handlingTime": {
+									"@type": "QuantitativeValue",
+									"minValue": "",
+									"maxValue": "",
+									"unitCode": "DAY"
+								},
+								"transitTime": {
+									"@type": "QuantitativeValue",
+									"minValue": "",
+									"maxValue": "",
+									"unitCode": "DAY"
+								}
+							}
+						}
+					],
+					"itemCondition": "http://schema.org/NewCondition",
+					"brand": {
+						"@type": "Brand",
+						"name": "KEF",
+						"url": "https://ca.kef.com/collections/vendors?q=KEF"
+					},
+					"seller": {
+						"@type": "Organization",
+						"name": "KEF CA",
+						"@id": "https://ca.kef.com#organization_sp_schemaplus"
+					}
+				}
+			},
+			{
+				"@type": "Product",
+				"name": "Satin White",
+				"sku": "SP4093A0AA",
+				"mpn": 46256842113247,
+				"image": "https://ca.kef.com/cdn/shop/files/pdt-q11-meta-stn-pks02.png?v=1762158686&width=600",
+				"description": "Q11 Meta",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://ca.kef.com/products/q11-meta?variant=46256842113247",
+					"@id": "46256842113247",
+					"inventoryLevel": { "@type": "QuantitativeValue", "value": "141" },
+					"availability": "http://schema.org/InStock",
+					"price": 1249.98,
+					"priceSpecification": [
+						{
+							"@type": "UnitPriceSpecification",
+							"price": 1249.98,
+							"priceCurrency": "CAD"
+						}
+					],
+					"priceCurrency": "CAD",
+					"description": "CAD-124998-$1,249.98-$1,249.98 CAD-1,249.98",
+					"priceValidUntil": "2030-12-21",
+					"shippingDetails": [
+						{
+							"@type": "OfferShippingDetails",
+							"shippingRate": { "@type": "MonetaryAmount", "currency": "CAD" },
+							"shippingDestination": {
+								"@type": "DefinedRegion",
+								"addressCountry": []
+							},
+							"deliveryTime": {
+								"@type": "ShippingDeliveryTime",
+								"handlingTime": {
+									"@type": "QuantitativeValue",
+									"minValue": "",
+									"maxValue": "",
+									"unitCode": "DAY"
+								},
+								"transitTime": {
+									"@type": "QuantitativeValue",
+									"minValue": "",
+									"maxValue": "",
+									"unitCode": "DAY"
+								}
+							}
+						}
+					],
+					"itemCondition": "http://schema.org/NewCondition",
+					"brand": {
+						"@type": "Brand",
+						"name": "KEF",
+						"url": "https://ca.kef.com/collections/vendors?q=KEF"
+					},
+					"seller": {
+						"@type": "Organization",
+						"name": "KEF CA",
+						"@id": "https://ca.kef.com#organization_sp_schemaplus"
+					}
+				}
+			},
+			{
+				"@type": "Product",
+				"name": "Walnut",
+				"sku": "SP4093W0AA",
+				"mpn": 46256842146015,
+				"image": "https://ca.kef.com/cdn/shop/files/pdt-q11-meta-stn-pks03.png?v=1762158686&width=600",
+				"description": "Q11 Meta",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://ca.kef.com/products/q11-meta?variant=46256842146015",
+					"@id": "46256842146015",
+					"inventoryLevel": { "@type": "QuantitativeValue", "value": "92" },
+					"availability": "http://schema.org/InStock",
+					"price": 1249.98,
+					"priceSpecification": [
+						{
+							"@type": "UnitPriceSpecification",
+							"price": 1249.98,
+							"priceCurrency": "CAD"
+						}
+					],
+					"priceCurrency": "CAD",
+					"description": "CAD-124998-$1,249.98-$1,249.98 CAD-1,249.98",
+					"priceValidUntil": "2030-12-21",
+					"shippingDetails": [
+						{
+							"@type": "OfferShippingDetails",
+							"shippingRate": { "@type": "MonetaryAmount", "currency": "CAD" },
+							"shippingDestination": {
+								"@type": "DefinedRegion",
+								"addressCountry": []
+							},
+							"deliveryTime": {
+								"@type": "ShippingDeliveryTime",
+								"handlingTime": {
+									"@type": "QuantitativeValue",
+									"minValue": "",
+									"maxValue": "",
+									"unitCode": "DAY"
+								},
+								"transitTime": {
+									"@type": "QuantitativeValue",
+									"minValue": "",
+									"maxValue": "",
+									"unitCode": "DAY"
+								}
+							}
+						}
+					],
+					"itemCondition": "http://schema.org/NewCondition",
+					"brand": {
+						"@type": "Brand",
+						"name": "KEF",
+						"url": "https://ca.kef.com/collections/vendors?q=KEF"
+					},
+					"seller": {
+						"@type": "Organization",
+						"name": "KEF CA",
+						"@id": "https://ca.kef.com#organization_sp_schemaplus"
+					}
+				}
+			}
+		],
+		"productGroupID": "8780298780895",
+		"productionDate": "",
+		"purchaseDate": "",
+		"releaseDate": "",
+		"review": "",
+		"sku": "SP4093B0AA",
+		"mpn": 46256842080479,
+		"weight": {
+			"@type": "QuantitativeValue",
+			"unitCode": "LBR",
+			"value": "65.0"
+		},
+		"width": "",
+		"description": "Q11 Meta",
+		"image": [
+			"https:\/\/ca.kef.com\/cdn\/shop\/files\/pdt-q11-meta-stn-pks01.png?v=1762158686\u0026width=600",
+			"https:\/\/ca.kef.com\/cdn\/shop\/files\/pdt-q11-meta-stn-pks02.png?v=1762158686\u0026width=600",
+			"https:\/\/ca.kef.com\/cdn\/shop\/files\/pdt-q11-meta-stn-pks03.png?v=1762158686\u0026width=600",
+			"https:\/\/ca.kef.com\/cdn\/shop\/files\/pdt-q11-meta-stn-pks04.png?v=1742798677\u0026width=600",
+			"https:\/\/ca.kef.com\/cdn\/shop\/files\/pdt-q11-meta-stn-pks05.png?v=1742798677\u0026width=600",
+			"https:\/\/ca.kef.com\/cdn\/shop\/files\/pdt-q11-meta-stn-pks06.png?v=1742798677\u0026width=600",
+			"https:\/\/ca.kef.com\/cdn\/shop\/files\/pdt-q11-meta-stn-pks07.png?v=1742798677\u0026width=600",
+			"https:\/\/ca.kef.com\/cdn\/shop\/files\/pdt-q11-meta-stn-pks08.png?v=1742798677\u0026width=600",
+			"https:\/\/ca.kef.com\/cdn\/shop\/files\/pdt-q11-meta-stn-pks01.png?v=1762158686\u0026width=600"
+		],
+		"name": "Q11 Meta",
+		"url": "https://ca.kef.com/products/q11-meta"
+	},
+	{
+		"@context": "http://schema.org",
+		"@type": "BreadcrumbList",
+		"name": "KEF CA Breadcrumbs Schema by SchemaPlus",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"item": { "@id": "https://ca.kef.com/collections", "name": "Products" }
+			},
+			{
+				"@type": "ListItem",
+				"position": 2,
+				"item": {
+					"@id": "https://ca.kef.com/collections/blade-series",
+					"name": "Blade Series"
+				}
+			},
+			{
+				"@type": "ListItem",
+				"position": 3,
+				"item": {
+					"@id": "https://ca.kef.com/products/q11-meta#breadcrumb_sp_schemaplus",
+					"name": "Q11 Meta"
+				}
+			}
+		]
+	}
+]

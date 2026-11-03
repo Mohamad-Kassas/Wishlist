@@ -1,0 +1,70 @@
+{
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "How do I find my band size?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Apple Watch bands are available in a variety of styles and sizes. First, you’ll need to choose a case size and band style to see which band sizes are available with that combination. The band you choose will specify the maximum and minimum wrist size. To get the correct band size, we recommend that you precisely measure around your wrist. If you choose an Apple Watch with a Sport Band, first select your case size then select your band size. Sport Bands only come with one size in the box. If you choose a Solo Loop or Braided Solo Loop band, you’ll need to use the sizing guide to find your exact size. Our sizing for these bands has changed, so please use the updated sizing guide even if you’ve purchased one in the past. When you shop for Solo Loop bands, there are step-by-step instructions to help you measure your wrist using a printable tool or household objects so you can find the correct size."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What is the difference between GPS and GPS + Cellular?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "The GPS + Cellular model allows you to stay connected to the people and information you care about with just your Apple Watch. With a data plan you can send and receive text messages, answer phone calls, receive notifications, and stream Apple Music and Apple Podcasts without needing your iPhone nearby. To pair watches for kids who don’t have an iPhone yet using Apple Watch For Your Kids, a GPS + Cellular model is required.\nWith the GPS model, you must be connected to your iPhone via Bluetooth or Wi-Fi to send and receive text messages, answer phone calls and receive notifications. The built-in GPS works independently of your iPhone for distance, pace and route mapping in workouts. Learn more about cellular connectivity and which network providers support Apple Watch(Opens in a new window)"
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Which network providers support Apple Watch cellular service?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "While service plans vary by network provider, Footnote 1 many offer free or special trials for Apple Watch. Contact your wireless service provider for more details. Learn more about which network providers support Apple Watch(Opens in a new window)"
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Which iPhone models are compatible with Apple Watch?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Apple Watch Ultra 3, Apple Watch Series 11 and Apple Watch SE 3 require an iPhone 11 or later with iOS 26 or later. Apple Watch is only compatible with iPhone.  \nFeatures are subject to change. Some features, applications and services may not be available in all regions or all languages.  View complete list (Opens in a new window)"
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Is it easy to transfer my data and set up my new Apple Watch?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Whether you buy online or in an Apple Store, it’s easy to transfer your data and set up your new Apple Watch. Apple Watch content backs up automatically to your companion iPhone, so you can restore your Apple Watch from a backup. When you back up your iPhone, it includes your Apple Watch data. Discover all the amazing things your new Apple Watch can do with the help of an Apple Specialist. After your Apple Watch ships, you’ll receive an invitation to schedule a free one-to-one online session where you can cover the topics of your choice. To get the most out of your time, use our online guides to transfer your data to your new Apple Watch before your session. Learn how to set up and transfer data to your new Apple Watch(Opens in a new window)"
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How does Apple Trade In work?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Apple Trade In makes it easy to get credit toward the purchase of your next Apple Watch. Simply answer a few questions about your device. Based on what you tell us, we’ll provide an estimated trade-in value. If you pay monthly, we’ll apply the value as an instant credit to lower the monthly payments of your new Apple Watch. If you pay in full, we’ll credit your payment method after we receive your trade-in. If it’s not eligible for credit, you can recycle it for free. We’ll send you a free trade-in kit. You may receive it along with your new device. Otherwise, it will be mailed to you separately as soon as your order is ready for delivery or pickup. Once you receive the trade-in kit, you have 15 days to prepare and send in your device. When we receive your trade-in, we'll verify its condition, and if everything checks out, your trade-in will be complete. If your device doesn’t match the condition you described, you’ll receive an email with next steps. If you paid in full and the value of your device was more than the cost of your new Apple Watch, you’ll receive an Apple Gift Card by email with the remaining amount. The online trade-in process generally takes 2–3 weeks.\nYou can also trade in your device at an Apple Store at the point of purchase. However, the trade-in value in a store may be different from the estimated trade-in value you received online.\nLearn more about Apple Trade In (Opens in a new window)"
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What are my delivery options and when will I get my items?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Delivery estimates are based on item availability and the shipping option you choose. You’ll get a final delivery date after you place your order. \nFree next-day delivery is available for any in-stock iPhone and free standard delivery on all orders. Or you can upgrade your shipping method for an additional charge. Depending on your location, your order may be eligible for Apple Store Pickup. At checkout, simply choose to pick up your items at an Apple Store near you. Orders placed through apple.com can only be shipped within the country or region of purchase. Visit the online store of the location where you want your products delivered."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Can I return my Apple Watch?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes. If you change your mind and no longer wish to keep your Apple Watch, you have the option to return it to us for free within 15 days of receipt. The returned Apple Watch must be in good condition and in the original packaging, which contains all accessories, manuals and instructions. Returns are subject to Apple's Sales and Refunds Policy.\nLearn more about returns, refunds and exchanges(Opens in a new window)"
+			}
+		}
+	]
+}

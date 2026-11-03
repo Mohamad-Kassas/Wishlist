@@ -2,15 +2,124 @@
 
 :root {
 	--background: #000000;
-	--foreground: #ffffff;
+	--foreground: #f7f6f2;
+	--bg-surface: #0a0a0c;
+	--bg-elevated: #121216;
+	--border-hairline: rgba(255, 255, 255, 0.08);
+	--ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+	--font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
 body {
 	background: var(--background);
 	color: var(--foreground);
+	font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.tabular {
+	font-variant-numeric: tabular-nums;
+}
+
+.press-scale {
+	transition:
+		transform 140ms var(--ease-out-quint),
+		background-color 180ms var(--ease-out-quint),
+		color 180ms var(--ease-out-quint),
+		border-color 180ms var(--ease-out-quint),
+		opacity 180ms var(--ease-out-quint);
+}
+
+.press-scale:active {
+	transform: scale(0.97);
+}
+
+.sliding-pill {
+	transition:
+		transform 240ms var(--ease-out-quint),
+		width 240ms var(--ease-out-quint),
+		background-color 200ms var(--ease-out-quint),
+		opacity 150ms ease;
+}
+
+.card-interactive {
+	transition:
+		transform 200ms var(--ease-out-quint),
+		border-color 200ms var(--ease-out-quint),
+		background-color 200ms var(--ease-out-quint),
+		box-shadow 200ms var(--ease-out-quint);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.card-interactive:hover {
+		border-color: rgba(255, 255, 255, 0.2);
+		background-color: #0e0e12;
+	}
+
+	.hover-surface:hover {
+		background-color: rgba(255, 255, 255, 0.12);
+		color: #f7f6f2;
+	}
+}
+
+/* Reversible Enter & Exit Transitions for Backdrop, Modal, and Sidebar Drawer */
+.backdrop-transition {
+	transition: opacity 220ms var(--ease-out-quint);
+}
+
+.backdrop-open {
+	opacity: 1;
+}
+
+.backdrop-closed {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.modal-transition {
+	transition:
+		transform 220ms var(--ease-out-quint),
+		opacity 220ms var(--ease-out-quint);
+}
+
+.modal-open {
+	transform: scale(1) translateY(0);
+	opacity: 1;
+}
+
+.modal-closed {
+	transform: scale(0.95) translateY(8px);
+	opacity: 0;
+	pointer-events: none;
+}
+
+.sheet-transition {
+	transition:
+		transform 250ms var(--ease-out-quint),
+		opacity 220ms var(--ease-out-quint);
+}
+
+.sheet-open {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+.sheet-closed {
+	transform: translateX(100%);
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }

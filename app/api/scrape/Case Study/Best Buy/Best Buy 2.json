@@ -1,0 +1,47 @@
+{
+	"@context": "http://schema.org/",
+	"@type": "Product",
+	"brand": { "@type": "Brand", "name": "SAMSUNG" },
+	"gtin12": ["887276875460"],
+	"name": "Samsung Galaxy Watch7 40mm LTE Smartwatch - Green",
+	"model": "SM-L305FZGAXAC",
+	"sku": "17984638",
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": 4.57,
+		"reviewCount": 4082
+	},
+	"image": [
+		"https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17984/17984638.jpg"
+	],
+	"description": "The Samsung Galaxy Watch7 is your perfect wellness companion, right on your wrist. Powered by Galaxy AI, this smartwatch has everything you need to keep you on track with your health and fitness goals. Enjoy your personalized Energy Score, plus Wellness Tips to help you get ready for the day. Track your progress while running or biking and compare your current performance to your last one.",
+	"url": null,
+	"offers": {
+		"@type": "Offer",
+		"priceCurrency": "CAD",
+		"price": 389.99,
+		"priceValidUntil": "2026-01-18T23:59:59-06:00",
+		"url": "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-watch7-40mm-lte-smartwatch-green/17984638",
+		"availability": "http://schema.org/InStock"
+	},
+	"review": [
+		{
+			"@type": "Review",
+			"reviewRating": { "@type": "Rating", "ratingValue": 5 },
+			"author": { "@type": "Person", "name": "Anonymous reviewer" },
+			"reviewBody": "Saving the world just got a whole lot easier with this bad boy! Plus, it has everything from the Galaxy phones of 10 years ago that were taken away and put on the watches."
+		},
+		{
+			"@type": "Review",
+			"reviewRating": { "@type": "Rating", "ratingValue": 5 },
+			"author": { "@type": "Person", "name": "Anonymous reviewer" },
+			"reviewBody": "I've been using the Galaxy Watch7 for a few weeks now, and I’m thoroughly impressed! The 44mm size is perfect—not too bulky, but still substantial enough to feel sturdy and stylish on my wrist. The silver finish gives it a sleek, modern look that pairs well with both casual and formal outfits.The watch's display is sharp and vibrant, making it easy to read in various lighting conditions. The touchscreen is responsive, and navigating through apps and menus is smooth. I particularly appreciate the customizable watch faces that allow me to personalize the look to suit my mood or activity.One of the standout features for me is the fitness tracking. Whether I’m walking, running, or doing a workout, the Galaxy Watch7 tracks my activity accurately. The heart rate monitor and sleep tracking provide insightful data that helps me stay on top of my health goals. I also love the automatic workout detection feature—it’s nice not to have to manually start and stop the tracking.The battery life is another strong point. I can easily get through a full day of use with plenty of battery left over, even with notifications, GPS, and fitness tracking enabled. Charging is quick and convenient, so I never have to worry about running out of juice.Connectivity with my phone has been seamless, and I appreciate being able to take calls, respond to texts, and manage notifications directly from the watch. It’s a huge convenience, especially when I’m on the go.Overall, the Galaxy Watch7 44mm is a fantastic smartwatch that delivers on all fronts—style, functionality, and performance. I highly recommend it to anyone looking for a reliable and versatile wearable!"
+		},
+		{
+			"@type": "Review",
+			"reviewRating": { "@type": "Rating", "ratingValue": 5 },
+			"author": { "@type": "Person", "name": "Icemancometh" },
+			"reviewBody": "This is one of the best sports watches I've ever owned it has more features than I ever expected it does way more thing than any of those other watches that I had right down to the monitoring of my heart and sleep apnea that's why it comes highly recommended by me one of the best purchases I ever made as far as watch is concerned and it looks great on me"
+		}
+	]
+}

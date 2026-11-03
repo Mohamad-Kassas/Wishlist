@@ -1,0 +1,20 @@
+{
+	"@context": "https://schema.org",
+	"@id": "https://store.google.com/#organization",
+	"@type": "Organization",
+	"name": "Google Store",
+	"url": "https://store.google.com/",
+	"parentOrganization": {
+		"@id": "https://www.google.com/#organization",
+		"@type": "Organization",
+		"name": "Google",
+		"url": "https://www.google.com/"
+	},
+	"sameAs": [
+		"https://en.wikipedia.org/wiki/Google_Store",
+		"https://www.youtube.com/c/googlenest",
+		"https://www.youtube.com/c/madebygoogle",
+		"https://www.instagram.com/madebygoogle/",
+		"https://twitter.com/madebygoogle"
+	]
+}

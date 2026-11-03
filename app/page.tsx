@@ -1,7 +1,9 @@
-export default function Home() {
-	return (
-		<main className="min-h-screen border-2 border-red-500">
-			<h1 className="text-4xl font-bold text-red-500">Hello World</h1>
-		</main>
-	);
+import { WishlistGallery } from "@/components/WishlistGallery";
+import { getAllItems } from "@/lib/store";
+
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+	const items = await getAllItems();
+	return <WishlistGallery initialItems={items} />;
 }

@@ -1,0 +1,31 @@
+{
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	"@id": "https://www.LEGO.com/#organization",
+	"name": "The LEGO® Group",
+	"url": "https://www.LEGO.com",
+	"logo": {
+		"@type": "ImageObject",
+		"url": "https://www.lego.com/static/favicon/lego-logo-512.png",
+		"width": 512,
+		"height": 512
+	},
+	"founder": { "@type": "Person", "name": "Ole Kirk Kristiansen" },
+	"parentOrganization": {
+		"@type": "Organization",
+		"@id": "https://www.kirkbi.com/#organization",
+		"name": "Kirkbi A/S",
+		"url": "https://www.kirkbi.com"
+	},
+	"foundingDate": "1932",
+	"sameAs": [
+		"https://www.wikidata.org/entity/Q1063455",
+		"https://www.youtube.com/user/LEGO",
+		"https://www.linkedin.com/company/lego-group",
+		"https://www.facebook.com/LEGO",
+		"https://www.twitter.com/LEGO_Group",
+		"https://www.pinterest.com/LEGO",
+		"https://www.instagram.com/LEGO",
+		"https://www.tiktok.com/@LEGO"
+	]
+}

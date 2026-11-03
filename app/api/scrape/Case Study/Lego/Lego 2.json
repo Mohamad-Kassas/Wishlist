@@ -1,0 +1,7 @@
+{
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	"@id": "https://www.LEGO.com/#webpage",
+	"name": "The LEGO® Group",
+	"url": "https://www.LEGO.com"
+}

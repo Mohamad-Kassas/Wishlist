@@ -1,0 +1,15 @@
+services:
+  web:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    container_name: wishlist-web
+    restart: unless-stopped
+    ports:
+      - "${WISHLIST_PORT:-8089}:3000"
+    environment:
+      - NODE_ENV=production
+      - CHROME_EXECUTABLE_PATH=/usr/bin/chromium
+      - NEXT_TELEMETRY_DISABLED=1
+    volumes:
+      - ../data:/app/data

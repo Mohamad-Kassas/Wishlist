@@ -1,0 +1,24 @@
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"name": "FIFA World Cup™ Official Trophy",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": "https://www.lego.com/"
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "LEGO® Editions Sets",
+			"item": "https://www.lego.com/en-ca/themes/editions"
+		},
+		{
+			"@type": "ListItem",
+			"position": 3,
+			"name": "FIFA World Cup™ Official Trophy"
+		}
+	]
+}

@@ -1,28 +1,28 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.3.11/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
 	"vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
 	"files": { "ignoreUnknown": false },
 	"formatter": { "enabled": true, "indentStyle": "tab" },
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": false,
+			"preset": "none",
 			"complexity": {
 				"noBannedTypes": "error",
 				"noUselessThisAlias": "error",
 				"noUselessTypeConstraint": "error"
 			},
-			"correctness": { "noUnusedVariables": "error" },
-			"nursery": {
+			"correctness": {
+				"noUnusedVariables": "error",
 				"noBeforeInteractiveScriptOutsideDocument": "warn",
-				"noNextAsyncClientComponent": "warn",
-				"noSyncScripts": "error",
-				"noUnusedExpressions": "off"
+				"noNextAsyncClientComponent": "warn"
 			},
+			"nursery": {},
 			"performance": {
 				"noImgElement": "warn",
 				"noUnwantedPolyfillio": "warn",
-				"useGoogleFontPreconnect": "warn"
+				"useGoogleFontPreconnect": "warn",
+				"noSyncScripts": "error"
 			},
 			"style": {
 				"noCommonJs": "error",
@@ -41,7 +41,8 @@
 				"noTsIgnore": "error",
 				"noUnsafeDeclarationMerging": "error",
 				"useGoogleFontDisplay": "warn",
-				"useNamespaceKeyword": "error"
+				"useNamespaceKeyword": "error",
+				"noUnusedExpressions": "off"
 			}
 		},
 		"includes": [
@@ -208,18 +209,16 @@
 						"noChildrenProp": "error",
 						"useExhaustiveDependencies": "warn",
 						"useHookAtTopLevel": "error",
-						"useJsxKeyInIterable": "error"
-					},
-					"nursery": {
+						"useJsxKeyInIterable": "error",
 						"noBeforeInteractiveScriptOutsideDocument": "warn",
-						"noNextAsyncClientComponent": "warn",
-						"noSyncScripts": "warn",
-						"noUnknownAttribute": "off"
+						"noNextAsyncClientComponent": "warn"
 					},
+					"nursery": {},
 					"performance": {
 						"noImgElement": "warn",
 						"noUnwantedPolyfillio": "warn",
-						"useGoogleFontPreconnect": "warn"
+						"useGoogleFontPreconnect": "warn",
+						"noSyncScripts": "warn"
 					},
 					"security": {
 						"noBlankTarget": "off",
@@ -231,7 +230,8 @@
 						"noDocumentImportInPage": "error",
 						"noDuplicateJsxProps": "error",
 						"noHeadImportInDocument": "error",
-						"useGoogleFontDisplay": "warn"
+						"useGoogleFontDisplay": "warn",
+						"noUnknownAttribute": "off"
 					}
 				}
 			}
@@ -252,8 +252,8 @@
 						"noUnreachable": "off",
 						"noUnreachableSuper": "off"
 					},
-					"nursery": { "useSpread": "error" },
-					"style": { "useConst": "error" },
+					"nursery": {},
+					"style": { "useConst": "error", "useSpreadOverApply": "error" },
 					"suspicious": {
 						"noClassAssign": "off",
 						"noDuplicateClassMembers": "off",

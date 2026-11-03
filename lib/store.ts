@@ -1,0 +1,585 @@
+import { promises as fs } from "node:fs";
+import path from "node:path";
+import type { WishlistItem } from "./types";
+
+const DATA_DIR = path.join(process.cwd(), "data");
+const DATA_FILE = path.join(DATA_DIR, "wishlist.json");
+
+/**
+ * 17 curated products (your 7 case-study items + 10 additional design/tech/audio/apparel pieces)
+ * spanning $48 to $7,495 CAD so dynamic price-based sizing (Large, Medium, Small) and vertical scrolling shine.
+ */
+const SEED_ITEMS: WishlistItem[] = [
+	{
+		id: "eames-lounge-chair",
+		url: "https://store.hermanmiller.com/living-room-furniture-lounge-chairs-ottomans/eames-lounge-chair-and-ottoman/5667.html",
+		domain: "hermanmiller.com",
+		title: "Eames Lounge Chair & Ottoman",
+		brand: "Herman Miller",
+		description:
+			"Molded walnut veneer shells with black MCL leather upholstery and die-cast aluminum base.",
+		image:
+			"https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85",
+		gallery: [
+			"https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85",
+		],
+		price: 7495.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Home & Carry",
+		inStock: true,
+		notes: "Walnut shell with Black MCL leather — reading corner centerpiece.",
+		createdAt: "2026-01-19T10:00:00.000Z",
+		updatedAt: "2026-01-19T10:00:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "kef-q11-meta",
+		url: "https://ca.kef.com/products/q11-meta",
+		domain: "ca.kef.com",
+		title: "Q11 Meta Floorstanding Speaker",
+		brand: "KEF",
+		description:
+			"Flagship 3-way bass reflex floorstanding speaker in the Q Series with Metamaterial Absorption Technology (MAT) and 12th generation Uni-Q driver array.",
+		image:
+			"https://ca.kef.com/cdn/shop/files/pdt-q11-meta-stn-pks01.png?v=1762158686&width=600",
+		gallery: [
+			"https://ca.kef.com/cdn/shop/files/pdt-q11-meta-stn-pks01.png?v=1762158686&width=600",
+			"https://ca.kef.com/cdn/shop/files/pdt-q11-meta-stn-pks02.png?v=1762158686&width=600",
+			"https://ca.kef.com/cdn/shop/files/pdt-q11-meta-stn-pks03.png?v=1762158686&width=600",
+		],
+		price: 1249.98,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Audio",
+		sku: "SP4093B0AA",
+		inStock: true,
+		selectedVariantId: "46256842080479",
+		variants: [
+			{
+				id: "46256842080479",
+				name: "Satin Black",
+				color: "Satin Black",
+				price: 1249.98,
+				currency: "CAD",
+				image:
+					"https://ca.kef.com/cdn/shop/files/pdt-q11-meta-stn-pks01.png?v=1762158686&width=600",
+				sku: "SP4093B0AA",
+				url: "https://ca.kef.com/products/q11-meta?variant=46256842080479",
+				inStock: true,
+			},
+			{
+				id: "46256842113247",
+				name: "Satin White",
+				color: "Satin White",
+				price: 1249.98,
+				currency: "CAD",
+				image:
+					"https://ca.kef.com/cdn/shop/files/pdt-q11-meta-stn-pks02.png?v=1762158686&width=600",
+				sku: "SP4093A0AA",
+				url: "https://ca.kef.com/products/q11-meta?variant=46256842113247",
+				inStock: true,
+			},
+			{
+				id: "46256842146015",
+				name: "Walnut",
+				color: "Walnut",
+				price: 1249.98,
+				currency: "CAD",
+				image:
+					"https://ca.kef.com/cdn/shop/files/pdt-q11-meta-stn-pks03.png?v=1762158686&width=600",
+				sku: "SP4093W0AA",
+				url: "https://ca.kef.com/products/q11-meta?variant=46256842146015",
+				inStock: true,
+			},
+		],
+		notes: "Listening room main upgrade — Satin Black finish.",
+		createdAt: "2026-01-11T14:20:00.000Z",
+		updatedAt: "2026-01-11T14:20:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "leica-q3-43",
+		url: "https://leica-camera.com/en-int/photography/cameras/q/q3-43",
+		domain: "leica-camera.com",
+		title: "Leica Q3 43 Full-Frame Compact Camera",
+		brand: "Leica",
+		description:
+			"60MP BSI CMOS full-frame sensor paired with the APO-Summicron 43mm f/2 ASPH fixed lens.",
+		image:
+			"https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85",
+		gallery: [
+			"https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=85",
+		],
+		price: 6895.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Tech",
+		inStock: true,
+		notes: "43mm focal length — everyday travel and documentary camera.",
+		createdAt: "2026-01-18T11:30:00.000Z",
+		updatedAt: "2026-01-18T11:30:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "macbook-pro-m4-max",
+		url: "https://www.apple.com/ca/shop/buy-mac/macbook-pro",
+		domain: "apple.com",
+		title: "MacBook Pro 16-inch (Space Black)",
+		brand: "Apple",
+		description:
+			"Liquid Retina XDR display with nano-texture glass option, 48GB unified memory, and 1TB SSD.",
+		image:
+			"https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=85",
+		gallery: [
+			"https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=85",
+		],
+		price: 4699.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Tech",
+		inStock: true,
+		notes: "Space Black with nano-texture display.",
+		createdAt: "2026-01-17T09:15:00.000Z",
+		updatedAt: "2026-01-17T09:15:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "teenage-engineering-op1-field",
+		url: "https://teenage.engineering/store/op-1-field",
+		domain: "teenage.engineering",
+		title: "OP-1 field Portable Synthesizer",
+		brand: "Teenage Engineering",
+		description:
+			"All-in-one portable synthesizer, sampler, and controller with 32-bit audio signal chain and 24-hour battery.",
+		image:
+			"https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=900&q=85",
+		gallery: [
+			"https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=900&q=85",
+		],
+		price: 2749.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Audio",
+		inStock: true,
+		notes: " Low-profile anodized aluminum body.",
+		createdAt: "2026-01-16T16:40:00.000Z",
+		updatedAt: "2026-01-16T16:40:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "rimowa-original-cabin",
+		url: "https://www.rimowa.com/ca/en/luggage/colour/silver/cabin/92553004.html",
+		domain: "rimowa.com",
+		title: "Original Cabin Aluminum Suitcase",
+		brand: "Rimowa",
+		description:
+			"Iconic high-end anodized aluminum carry-on luggage with Multiwheel system and TSA-approved locks.",
+		image:
+			"https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=900&q=85",
+		gallery: [
+			"https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=900&q=85",
+		],
+		price: 1950.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Home & Carry",
+		inStock: true,
+		notes: "Silver anodized aluminum — lifetime guarantee.",
+		createdAt: "2026-01-15T14:10:00.000Z",
+		updatedAt: "2026-01-15T14:10:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "fellow-espresso-series-1",
+		url: "https://fellowproducts.com/products/espresso-series-1",
+		domain: "fellowproducts.com",
+		title: "Espresso Series 1 Machine",
+		brand: "Fellow",
+		description:
+			"Precision dual-heater espresso system with Boosted Boiler technology and integrated volumetric profiling.",
+		image:
+			"https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=85",
+		gallery: [
+			"https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=85",
+		],
+		price: 1650.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Home & Carry",
+		inStock: true,
+		notes: "Matte Black with walnut portafilter handle.",
+		createdAt: "2026-01-14T19:00:00.000Z",
+		updatedAt: "2026-01-14T19:00:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "apple-watch-s11",
+		url: "https://www.apple.com/ca/shop/buy-watch/apple-watch",
+		domain: "apple.com",
+		title: "Apple Watch Series 11",
+		brand: "Apple",
+		description:
+			"Thinnest Apple Watch design with wide-angle OLED display, sleep apnea notifications, and fast charging.",
+		image:
+			"https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s11-case-unselect-gallery-1-202509_GEO_CA?wid=1200&hei=800&fmt=jpeg&qlt=90&.v=1756345107719",
+		gallery: [
+			"https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s11-case-unselect-gallery-1-202509_GEO_CA?wid=1200&hei=800&fmt=jpeg&qlt=90&.v=1756345107719",
+		],
+		price: 549.0,
+		highPrice: 1459.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Tech",
+		inStock: true,
+		notes: "46mm Jet Black Aluminum or Natural Titanium case.",
+		createdAt: "2026-01-11T15:00:00.000Z",
+		updatedAt: "2026-01-11T15:00:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "arcteryx-beta-ar",
+		url: "https://arcteryx.com/ca/en/shop/mens/beta-ar-jacket",
+		domain: "arcteryx.com",
+		title: "Beta AR Gore-Tex Pro Shell Jacket",
+		brand: "Arc'teryx",
+		description:
+			"Packable, breathable, waterproof GORE-TEX PRO with Most Rugged technology for alpine conditions.",
+		image:
+			"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85",
+		gallery: [
+			"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85",
+		],
+		price: 750.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Footwear & Apparel",
+		inStock: true,
+		notes: "Black Sapphire — Size Medium.",
+		createdAt: "2026-01-13T12:00:00.000Z",
+		updatedAt: "2026-01-13T12:00:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "sony-wh1000xm5",
+		url: "https://www.sony.ca/en/electronics/headband-headphones/wh-1000xm5",
+		domain: "sony.ca",
+		title: "WH-1000XM5 Wireless Noise-Canceling Headphones",
+		brand: "Sony",
+		description:
+			"Industry-leading 8-microphone active noise cancellation with 30-hour battery life and multipoint Bluetooth.",
+		image:
+			"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85",
+		gallery: [
+			"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85",
+		],
+		price: 499.99,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Audio",
+		inStock: true,
+		createdAt: "2026-01-12T20:00:00.000Z",
+		updatedAt: "2026-01-12T20:00:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "samsung-galaxy-watch7-40mm",
+		url: "https://www.bestbuy.ca/en-ca/product/samsung-galaxy-watch7-40mm-lte-smartwatch-green/17984638",
+		domain: "bestbuy.ca",
+		title: "Samsung Galaxy Watch7 40mm LTE Smartwatch",
+		brand: "Samsung",
+		description:
+			"Powered by Galaxy AI with personalized Energy Score, dual-frequency GPS, and BioActive health sensor.",
+		image:
+			"https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17984/17984638.jpg",
+		gallery: [
+			"https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17984/17984638.jpg",
+		],
+		price: 389.99,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Tech",
+		sku: "17984638",
+		inStock: true,
+		rating: 4.57,
+		reviewCount: 4082,
+		createdAt: "2026-01-11T17:05:00.000Z",
+		updatedAt: "2026-01-11T17:05:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "keychron-q1-max",
+		url: "https://www.keychron.com/products/keychron-q1-max-qmk-via-wireless-custom-mechanical-keyboard",
+		domain: "keychron.com",
+		title: "Q1 Max QMK/VIA Wireless Custom Mechanical Keyboard",
+		brand: "Keychron",
+		description:
+			"Full CNC-machined 6063 aluminum body with double-gasket design, 2.4GHz wireless, and Gateron Jupiter Banana switches.",
+		image:
+			"https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85",
+		gallery: [
+			"https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85",
+		],
+		price: 299.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Tech",
+		inStock: true,
+		createdAt: "2026-01-11T16:40:00.000Z",
+		updatedAt: "2026-01-11T16:40:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "lego-world-cup-trophy-43020",
+		url: "https://www.lego.com/en-ca/product/fifa-world-cup-official-trophy-43020",
+		domain: "lego.com",
+		title: "FIFA World Cup™ Official Trophy",
+		brand: "LEGO",
+		description:
+			"Create display-worthy soccer decor with the 2,842-piece LEGO Editions Official World Cup Trophy set (#43020).",
+		image:
+			"https://www.lego.com/cdn/cs/set/assets/blt92b9ec933bd790fc/43020_Prod.png",
+		gallery: [
+			"https://www.lego.com/cdn/cs/set/assets/blt92b9ec933bd790fc/43020_Prod.png",
+		],
+		price: 249.99,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Collectibles",
+		sku: "6590612",
+		inStock: true,
+		notes: "2,842 pieces — display shelf centerpiece for the 2026 World Cup.",
+		createdAt: "2026-01-11T16:10:00.000Z",
+		updatedAt: "2026-01-11T16:10:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "flos-bellhop-lamp",
+		url: "https://flos.com/en/us/bellhop-table-lamp/M-bellhop-table.html",
+		domain: "flos.com",
+		title: "Bellhop Rechargeable Table Lamp",
+		brand: "Flos",
+		description:
+			"Cordless direct-light table lamp designed by Edward Barber & Jay Osgerby in Cioko polycarbonate.",
+		image:
+			"https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85",
+		gallery: [
+			"https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=85",
+		],
+		price: 295.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Home & Carry",
+		inStock: true,
+		createdAt: "2026-01-11T15:30:00.000Z",
+		updatedAt: "2026-01-11T15:30:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "nike-af1-07-lv8",
+		url: "https://www.nike.com/ca/t/air-force-1-07-lv8-shoes-Ge1zPL6m",
+		domain: "nike.com",
+		title: "Nike Air Force 1 '07 LV8 Men's Shoes",
+		brand: "Nike",
+		description:
+			"Comfortable, durable and timeless — classic '80s construction paired with Anthracite and Wolf Grey leather.",
+		image:
+			"https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+		gallery: [
+			"https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+		],
+		price: 165.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Footwear & Apparel",
+		sku: "IQ0292-060",
+		inStock: true,
+		selectedVariantId: "IQ0292-060-10",
+		variants: [
+			{
+				id: "IQ0292-060-9",
+				name: "Anthracite / Cool Grey · Size 9",
+				color: "Anthracite/Cool Grey",
+				size: "9",
+				price: 165.0,
+				currency: "CAD",
+				image:
+					"https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				sku: "IQ0292-060",
+				inStock: true,
+			},
+			{
+				id: "IQ0292-060-10",
+				name: "Anthracite / Cool Grey · Size 10",
+				color: "Anthracite/Cool Grey",
+				size: "10",
+				price: 165.0,
+				currency: "CAD",
+				image:
+					"https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				sku: "IQ0292-060",
+				inStock: true,
+			},
+			{
+				id: "IQ0292-060-10.5",
+				name: "Anthracite / Cool Grey · Size 10.5",
+				color: "Anthracite/Cool Grey",
+				size: "10.5",
+				price: 165.0,
+				currency: "CAD",
+				image:
+					"https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				sku: "IQ0292-060",
+				inStock: true,
+			},
+			{
+				id: "IQ0292-060-11",
+				name: "Anthracite / Cool Grey · Size 11",
+				color: "Anthracite/Cool Grey",
+				size: "11",
+				price: 165.0,
+				currency: "CAD",
+				image:
+					"https://static.nike.com/a/images/t_default/443fb35f-3e71-4c85-8ca3-96565308b7de/NIKE+AIR+FORCE+1+%2707+LV8.png",
+				sku: "IQ0292-060",
+				inStock: true,
+			},
+		],
+		createdAt: "2026-01-11T18:00:00.000Z",
+		updatedAt: "2026-01-11T18:00:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "allbirds-kiwi-clog",
+		url: "https://www.allbirds.ca/products/mens-kiwi-clog-medium-grey",
+		domain: "allbirds.ca",
+		title: "Men's Kiwi Clog — Medium Grey",
+		brand: "Allbirds",
+		description:
+			"Slip-on wool blend clog with Pebble Grey SweetFoam® sole for indoor and everyday comfort.",
+		image:
+			"https://allbirds.ca/cdn/shop/files/A12157_25Q4_Kiwi-Clog-Medium-Grey-Dark-Grey-Sole_PDP_LEFT_large.jpg?v=1766078350",
+		gallery: [
+			"https://allbirds.ca/cdn/shop/files/A12157_25Q4_Kiwi-Clog-Medium-Grey-Dark-Grey-Sole_PDP_LEFT_large.jpg?v=1766078350",
+		],
+		price: 140.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "active",
+		category: "Footwear & Apparel",
+		inStock: true,
+		rating: 5.0,
+		reviewCount: 4,
+		createdAt: "2026-01-11T19:00:00.000Z",
+		updatedAt: "2026-01-11T19:00:00.000Z",
+		scrapeMethod: "http-ld-json",
+	},
+	{
+		id: "owala-freesip-sway",
+		url: "https://owalalife.com/en-ca/products/freesip-sway",
+		domain: "owalalife.com",
+		title: "FreeSip® Sway 30oz Insulated Bottle",
+		brand: "Owala",
+		description:
+			"Triple-layered stainless steel bottle with patented FreeSip spout, contoured grip, and bucket handle.",
+		image: "",
+		gallery: [],
+		price: 48.0,
+		currency: "CAD",
+		sizeOverride: null,
+		status: "owned",
+		category: "Home & Carry",
+		inStock: true,
+		rating: 4.63,
+		reviewCount: 2394,
+		acquiredAt: "2026-02-14T12:00:00.000Z",
+		notes: "Picked up for daily desk + gym carry.",
+		createdAt: "2026-01-11T20:00:00.000Z",
+		updatedAt: "2026-02-14T12:00:00.000Z",
+		scrapeMethod: "shopify-json",
+	},
+];
+
+async function ensureStoreFile(): Promise<void> {
+	try {
+		await fs.access(DATA_FILE);
+	} catch {
+		await fs.mkdir(DATA_DIR, { recursive: true });
+		await fs.writeFile(DATA_FILE, JSON.stringify(SEED_ITEMS, null, 2), "utf-8");
+	}
+}
+
+export async function getAllItems(): Promise<WishlistItem[]> {
+	await ensureStoreFile();
+	try {
+		const content = await fs.readFile(DATA_FILE, "utf-8");
+		const parsed = JSON.parse(content);
+		return Array.isArray(parsed) ? parsed : SEED_ITEMS;
+	} catch {
+		return SEED_ITEMS;
+	}
+}
+
+export async function saveAllItems(items: WishlistItem[]): Promise<void> {
+	await fs.mkdir(DATA_DIR, { recursive: true });
+	const tmpFile = `${DATA_FILE}.tmp`;
+	await fs.writeFile(tmpFile, JSON.stringify(items, null, 2), "utf-8");
+	await fs.rename(tmpFile, DATA_FILE);
+}
+
+export async function addItem(item: WishlistItem): Promise<WishlistItem> {
+	const items = await getAllItems();
+	const next = [item, ...items];
+	await saveAllItems(next);
+	return item;
+}
+
+export async function updateItemById(
+	id: string,
+	patch: Partial<WishlistItem>,
+): Promise<WishlistItem | null> {
+	const items = await getAllItems();
+	const index = items.findIndex((i) => i.id === id);
+	if (index === -1) return null;
+
+	const current = items[index];
+	const updated: WishlistItem = {
+		...current,
+		...patch,
+		id: current.id,
+		updatedAt: new Date().toISOString(),
+	};
+
+	if (patch.status === "owned" && current.status !== "owned") {
+		updated.acquiredAt = new Date().toISOString();
+	} else if (patch.status === "active") {
+		updated.acquiredAt = null;
+	}
+
+	items[index] = updated;
+	await saveAllItems(items);
+	return updated;
+}
+
+export async function deleteItemById(id: string): Promise<boolean> {
+	const items = await getAllItems();
+	const filtered = items.filter((i) => i.id !== id);
+	if (filtered.length === items.length) return false;
+	await saveAllItems(filtered);
+	return true;
+}

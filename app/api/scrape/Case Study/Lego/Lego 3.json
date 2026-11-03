@@ -1,0 +1,49 @@
+{
+	"@context": "https://schema.org/",
+	"@type": "Product",
+	"@id": "https://www.lego.com/product/fifa-world-cup-official-trophy-43020",
+	"name": "FIFA World Cup™ Official Trophy",
+	"description": "Create soccer decor with a LEGO® World Cup Trophy set",
+	"image": "https://www.lego.com/cdn/cs/set/assets/blt92b9ec933bd790fc/43020_Prod.png",
+	"productId": "43020",
+	"sku": "6590612",
+	"manufacturer": {
+		"@type": "Organization",
+		"name": "LEGO",
+		"logo": "https://assets.lego.com/logos/v4.5.0/brand-lego.svg",
+		"url": "https://www.lego.com"
+	},
+	"brand": { "@type": "Brand", "name": "LEGO®" },
+	"ageRange": { "@type": "PropertyValue", "name": "ageRange", "value": "12+" },
+	"dimensions": {
+		"@type": "ProductDimension",
+		"height": "N/A",
+		"width": "N/A",
+		"depth": "N/A"
+	},
+	"pieceCount": {
+		"@type": "PropertyValue",
+		"name": "pieceCount",
+		"value": 2842
+	},
+	"minfigureCount": {
+		"@type": "PropertyValue",
+		"name": "minifigureCount",
+		"value": "N/A"
+	},
+	"safetyWarning": {
+		"@type": "PropertyValue",
+		"name": "safetyWarning",
+		"value": "N/A"
+	},
+	"offers": {
+		"@type": "Offer",
+		"url": "https://www.lego.com/product/fifa-world-cup-official-trophy-43020",
+		"priceCurrency": "CAD",
+		"price": 249.99,
+		"itemCondition": "https://schema.org/NewCondition",
+		"availability": "https://schema.org/PreOrder",
+		"seller": { "@type": "Organization", "name": "LEGO®" },
+		"additionalProperty": []
+	}
+}

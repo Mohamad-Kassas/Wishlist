@@ -1,0 +1,33 @@
+{
+	"@context": "https://schema.org",
+	"@type": "Product",
+	"name": "Apple Watch Series 11",
+	"url": "https://www.apple.com/ca/shop/buy-watch/apple-watch",
+	"mainEntityOfPage": "https://www.apple.com/ca/shop/buy-watch/apple-watch",
+	"offers": [
+		{
+			"@type": "AggregateOffer",
+			"lowPrice": 549.0,
+			"highPrice": 1459.0,
+			"priceCurrency": "CAD",
+			"shippingDetails": {
+				"@type": "OfferShippingDetails",
+				"shippingRate": {
+					"@type": "MonetaryAmount",
+					"value": 0,
+					"currency": "CAD"
+				}
+			},
+			"hasMerchantReturnPolicy": {
+				"@type": "MerchantReturnPolicy",
+				"applicableCountry": "CA",
+				"returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+				"merchantReturnDays": 14,
+				"returnMethod": "https://schema.org/ReturnByMail",
+				"returnFees": "https://schema.org/FreeReturn"
+			}
+		}
+	],
+	"image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/s11-case-unselect-gallery-1-202509_GEO_CA?wid=5120&hei=3280&fmt=jpeg&qlt=90&.v=1756345107719",
+	"description": "Get $40 – $375 off a new Apple Watch Series 11 when you trade in an Apple Watch. Buy now at apple.com."
+}

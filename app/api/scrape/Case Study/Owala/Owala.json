@@ -1,0 +1,11 @@
+{
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"@id": "https://owalalife.com/en-ca/products/freesip-sway#product",
+	"name": "FreeSip® Sway",
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": 4.63,
+		"reviewCount": 2394
+	}
+}

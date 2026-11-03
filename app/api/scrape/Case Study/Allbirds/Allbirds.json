@@ -1,0 +1,17 @@
+{
+	"@context": "https://schema.org",
+	"@type": "Product",
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue": 5,
+		"reviewCount": 4
+	},
+	"name": "Men's Kiwi Clog - Medium Grey (Pebble Grey Sole)",
+	"image": "https://allbirds.ca/cdn/shop/files/A12157_25Q4_Kiwi-Clog-Medium-Grey-Dark-Grey-Sole_PDP_LEFT_large.jpg%3Fv=1766078350",
+	"offers": {
+		"@type": "Offer",
+		"availability": "https://schema.org/InStock",
+		"price": 140,
+		"priceCurrency": "CAD"
+	}
+}
