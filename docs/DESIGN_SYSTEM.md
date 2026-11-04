@@ -44,6 +44,6 @@ Light mode is intentionally omitted. The canvas is anchored on True Black (`#000
 3. **Pure Subtractive Cards**: Outside Bento cards show only `Brand · Collection`, product photography, `Title`, and `Price`. Never render size badges (`1×1`, `2×1`) or external action buttons (`✓`, `↗`) on the outside cards; all secondary actions live inside the slide-over inspector.
 4. **Dynamic Price-Distribution Sizing (`Small`, `Medium`, `Large`)**:
    - Card sizes are abstracted as **`Small`**, **`Medium`**, and **`Large`** (mapping under the hood to `1×1`, `2×1` horizontal split, and `2×2` showcase spans on desktop).
-   - By default (`sizeOverride: null`), `lib/sizing.ts` dynamically assigns `Large` (top ~18% by price), `Medium` (next ~30% by price), and `Small` (remaining items) and interleaves them in alternating 4×2 Bento bands down the scroll.
+   - By default (`sizeOverride: null`), `lib/sizing.ts` dynamically assigns `Large` (top ~22% by price rank), `Medium` (next ~28% by price rank), and `Small` (remaining ~50%) with no hard cap and no linear `maxPrice` outlier gate, interleaving them into alternating 4×2 Hero bands and zig-zag 4×1 Medium bands all the way down the scroll.
    - Users can optionally override any item's size to `Small`, `Medium`, or `Large` inside the Inspector Sheet.
 5. **Standard `<img>` Tags Only**: Never use `next/image`.
