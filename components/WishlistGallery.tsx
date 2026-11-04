@@ -306,7 +306,7 @@ export function WishlistGallery({ initialItems }: WishlistGalleryProps) {
 								className="h-2 w-2 rounded-full bg-amber-400"
 							/>
 							<h1 className="text-xs font-semibold uppercase tracking-[0.18em] text-[#F7F6F2]">
-								Fantasy Gallery
+								Wishlist
 							</h1>
 						</div>
 

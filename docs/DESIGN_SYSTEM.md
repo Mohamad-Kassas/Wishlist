@@ -1,7 +1,7 @@
-# Fantasy Gallery — Design System & UI Engineering Contract (`docs/DESIGN_SYSTEM.md`)
+# Wishlist — Design System & UI Engineering Contract (`docs/DESIGN_SYSTEM.md`)
 
 ## 1. Product Philosophy & Aesthetic Direction
-**Fantasy Gallery** is a personal, self-hosted dark-mode universal wishlist and curation gallery. It treats desired objects like museum pieces in a calm, high-contrast obsidian space—combining **Wealthsimple's** warm editorial clarity on financial numbers with **Linear's** tactile speed and precision.
+**Wishlist** is a personal, self-hosted dark-mode universal wishlist and curation gallery. It treats desired objects like museum pieces in a calm, high-contrast obsidian space—combining **Wealthsimple's** warm editorial clarity on financial numbers with **Linear's** tactile speed and precision.
 
 ---
 

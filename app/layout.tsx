@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: "Fantasy Gallery — Personal Object Wishlist",
+	title: "Wishlist — Personal Object Index",
 	description:
 		"Self-hosted dark-mode universal wishlist and curated object gallery.",
 	icons: {
